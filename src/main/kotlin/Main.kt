@@ -1,14 +1,10 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+    println("Hello world!\nВход в систему...\n")
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+    print("Введите имя пользователя: "); val userName = readln()
+    print("Введите пароль от учетной записи: "); val userShadow = readln()
+
+    if (userName == "Admin" && userShadow == "Password")
+        println("Успешный вход в систему: $userName, добро пожаловать!")
+    else println("Ошибка входа в систему: Неверное имя или пароль.")
 }
