@@ -34,3 +34,5 @@ bin/
 /.idea/
 /.gitignore
 /src/main/kotlin/Other/LeetCode.kt
+/src/main/kotlin/Other/BinaryTesting.kt
+/src/main/resources/
