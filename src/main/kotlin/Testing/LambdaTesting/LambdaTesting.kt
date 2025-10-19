@@ -1,4 +1,4 @@
-package core.Other
+package core.Testing.LambdaTesting
 
 fun lambdaTesting(){
 
@@ -40,18 +40,18 @@ fun lambdaTesting(){
 
 }
 
-class TestClass {
+internal class TestClass {
     var value1 = 1
 }
 
-fun interface IClickable{
+internal fun interface IClickable{
     fun onClick()
     fun aboveClick() = println("test")
 }
 
-class TestClass2
+internal class TestClass2
 
-data class User(var name: String, var age: Int) {
+internal data class User(var name: String, var age: Int) {
     fun doTask(task: ()->Unit) {
         task()
     }

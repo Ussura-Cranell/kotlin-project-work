@@ -1,4 +1,4 @@
-package core.Other
+package core.Testing.ClassTesting
 
 fun classesTesting(){
     var animal: Animal = Cat()
@@ -39,40 +39,40 @@ fun classesTesting(){
             ", hash1: ${threadSomethingClass1.hashCode()}, hash2: ${threadSomethingClass1.hashCode()}")
 
 }
-abstract class Animal
+internal abstract class Animal
 
-class Cat : Animal(), Soundable {
+internal class Cat : Animal(), Soundable {
     override fun makeSound() = println("*sounds of purring*")
 
 }
-class Dog(val x: Soundable): Animal(), Defendable, Soundable by x{
+internal class Dog(val x: Soundable): Animal(), Defendable, Soundable by x{
     override fun defend() = println("leave bites")
 
     override fun canDefend(): Boolean = true
 }
 
-interface Soundable {
+internal interface Soundable {
     fun makeSound()
 }
 
-interface Defendable {
+internal interface Defendable {
     fun defend()
     fun canDefend(): Boolean
 }
 
-interface IF1{
+internal interface IF1{
     fun op1() {
         println("op1 IF1")
     }
 }
 
-interface IF2{
+internal interface IF2{
     fun op1() {
         println("op1 IF2")
     }
 }
 
-class Class1 : IF1, IF2 {
+internal class Class1 : IF1, IF2 {
     override fun op1() {
         println("op1 class1")
         super<IF1>.op1()
@@ -80,13 +80,13 @@ class Class1 : IF1, IF2 {
     }
 }
 
-interface MakeSomething {
+internal interface MakeSomething {
     fun something(){
         println("something!")
     }
 }
 
-class SomethingClass {
+internal class SomethingClass {
     private val secretValue: Int = 4
     companion object SecondSomethingClass : MakeSomething
 

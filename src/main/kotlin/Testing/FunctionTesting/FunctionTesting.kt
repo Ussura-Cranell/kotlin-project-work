@@ -1,4 +1,4 @@
-package core.Other
+package core.Testing.FunctionTesting
 
 import kotlin.math.absoluteValue
 
@@ -56,33 +56,33 @@ fun functionTesting(){
     println( "Person(id=$id, name='$name', email='${personsChild3.email}', password='$password')")
 }
 
-fun createVector(x: Int = 0, y: Int = 0, z: Int = 0): Triple<Int, Int, Int> {
+internal fun createVector(x: Int = 0, y: Int = 0, z: Int = 0): Triple<Int, Int, Int> {
     return Triple(x, y, z)
 }
 
-fun validUserPassword(user: String, password: String) =
+internal fun validUserPassword(user: String, password: String) =
     when (user) {
         "User" -> password == "user12345"
         "Admin" -> password == "password"
         else -> false
     }
 
-data class Person(val id: Int, var name: String, var password: String)
+internal data class Person(val id: Int, var name: String, var password: String)
 
-fun printAll(vararg values: Any?){
+internal fun printAll(vararg values: Any?){
     print("Values: {")
     values.forEach { print("$it ") }
     print("}\n")
 }
 
-fun Person.changeName(name: String) {
+internal fun Person.changeName(name: String) {
     this.name = name
 }
 
-val Person.email: String
+internal val Person.email: String
     get() = "${this.name}@mimail.com"
 
-infix fun Person.makeChild(people2: Person): Person{
+internal infix fun Person.makeChild(people2: Person): Person{
     val id = this.id * 10 + people2.id
     val name = this.name + people2.name
 

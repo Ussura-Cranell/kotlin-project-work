@@ -33,6 +33,6 @@ bin/
 
 /.idea/
 /.gitignore
-/src/main/kotlin/Other/LeetCode.kt
-/src/main/kotlin/Other/BinaryTesting.kt
-/src/main/resources/
+/lib/
+/src/main/kotlin/Other/
+/src/main/kotlin/Testing/BinaryTesting/
