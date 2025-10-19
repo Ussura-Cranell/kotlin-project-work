@@ -33,3 +33,4 @@ bin/
 
 /.idea/
 /.gitignore
+/src/main/kotlin/Other/LeetCode.kt
