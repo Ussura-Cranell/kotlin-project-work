@@ -12,6 +12,6 @@ fun main() {
     // functionTesting()
     // classesTesting()
     // lambdaTesting()
-    collectionTesting()
-    // binaryTesting()
+    // collectionTesting()
+    binaryTesting()
 }

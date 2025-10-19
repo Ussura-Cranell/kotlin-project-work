@@ -35,4 +35,3 @@ bin/
 /.gitignore
 /lib/
 /src/main/kotlin/Other/
-/src/main/kotlin/Testing/BinaryTesting/
