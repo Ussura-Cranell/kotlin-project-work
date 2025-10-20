@@ -6,6 +6,8 @@ import core.Testing.ClassTesting.classesTesting
 import core.Testing.CollectionTesting.collectionTesting
 import core.Testing.FunctionTesting.functionTesting
 import core.Testing.LambdaTesting.lambdaTesting
+import core.Testing.NullableTesting.nullableTesting
+import core.Testing.OverloadingTesting.overloadingTesting
 
 fun main() {
 
@@ -13,5 +15,7 @@ fun main() {
     // classesTesting()
     // lambdaTesting()
     // collectionTesting()
-    binaryTesting()
+    // binaryTesting()
+    // nullableTesting()
+    overloadingTesting()
 }
