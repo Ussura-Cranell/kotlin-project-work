@@ -1,6 +1,7 @@
 package core
 
 // import core.Other.LeetCode.leetCodeSolution
+import core.Testing.AnnotationTesting.annotationTesting
 import core.Testing.BinaryTesting.binaryTesting
 import core.Testing.ClassTesting.classesTesting
 import core.Testing.CollectionTesting.collectionTesting
@@ -21,5 +22,6 @@ fun main() {
     // nullableTesting()
     // overloadingTesting()
     // higherOrderFun()
-    genericsTesting()
+    // genericsTesting()
+    annotationTesting()
 }
