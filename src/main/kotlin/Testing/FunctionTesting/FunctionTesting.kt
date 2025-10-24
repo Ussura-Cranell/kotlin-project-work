@@ -2,6 +2,10 @@ package core.Testing.FunctionTesting
 
 import kotlin.math.absoluteValue
 
+/**
+ * Изучение работы функций в Kotlin. Их определение и вызов.
+ */
+
 fun functionTesting(){
     println("Hello world!\nВход в систему...\n")
 

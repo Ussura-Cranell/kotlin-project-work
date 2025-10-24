@@ -2,6 +2,10 @@ package core.Testing.NullableTesting
 
 import core.Testing.CollectionTesting.User
 
+/**
+ * Изучение работы nullable типов.
+ */
+
 fun nullableTesting(){
     var user: User? = User.randomUser()
 

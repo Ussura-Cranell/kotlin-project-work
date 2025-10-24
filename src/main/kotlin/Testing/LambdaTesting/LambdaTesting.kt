@@ -1,5 +1,9 @@
 package core.Testing.LambdaTesting
 
+/**
+ * Изучение работы лямбда-выражений.
+ */
+
 fun lambdaTesting(){
 
     val users = hashSetOf<User>(

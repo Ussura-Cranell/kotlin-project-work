@@ -1,5 +1,9 @@
 package core.Testing.ClassTesting
 
+/**
+ * Изучение работы классов, объектов и интерфейсов.
+ */
+
 fun classesTesting(){
     var animal: Animal = Cat()
     if (animal is Cat) {

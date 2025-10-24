@@ -5,6 +5,10 @@ import kotlin.random.Random
 
 val faker = Faker()
 
+/**
+ * Изучение работы коллекций и последовательностей.
+ */
+
 fun collectionTesting(){
 
     val usersCollection = hashSetOf<User>()

@@ -1,7 +1,10 @@
 package core.Testing.OverloadingTesting
 
-import io.github.serpro69.kfaker.Faker
 import kotlin.random.Random
+
+/**
+ * Изучение перегрузки операторов и другие соглашения.
+ */
 
 fun overloadingTesting(){
     println("Hello, world!")

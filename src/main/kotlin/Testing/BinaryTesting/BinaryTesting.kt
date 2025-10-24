@@ -5,6 +5,10 @@ import kotlin.experimental.inv
 import kotlin.experimental.or
 import kotlin.experimental.xor
 
+/**
+ * Работа с бинарными данными.
+ */
+
 fun binaryTesting(){
 
     val byte: Byte = 199.toByte()
