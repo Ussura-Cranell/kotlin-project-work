@@ -114,7 +114,7 @@ internal class Something2 : Function2<Int, Int, Int> {
     }
 }
 
-inline fun times3000(
+internal inline fun times3000(
     num: Int,
     noinline action: (Int) -> Unit  // Явно запрещаем встраивание лямбды
 ) {
@@ -122,14 +122,14 @@ inline fun times3000(
     action(num * num)
 }
 
-fun add(a: Int, b: Int): Int = a + b
-fun multiply(a: Int, b: Int): Int = a * b
+internal fun add(a: Int, b: Int): Int = a + b
+internal fun multiply(a: Int, b: Int): Int = a * b
 
-class Multiplier(private val factor: Int) : (Int) -> Int {
+internal class Multiplier(private val factor: Int) : (Int) -> Int {
     override fun invoke(number: Int): Int = number * factor
 }
 
-class Something : (Int, Int) -> Int {
+internal class Something : (Int, Int) -> Int {
     override fun invoke(p1: Int, p2: Int): Int {
         val sum = p1 + p2
         println("$p1 + $p2 = $sum")
@@ -137,16 +137,16 @@ class Something : (Int, Int) -> Int {
     }
 }
 
-fun calculateAndPrint(a: Int, b: Int, operation: (Int, Int) -> Int) {
+internal fun calculateAndPrint(a: Int, b: Int, operation: (Int, Int) -> Int) {
     val result = operation(a, b)
     println("$a op $b = $result")
 }
 
-fun createAdder(value: Int): (Int) -> Int {
+internal fun createAdder(value: Int): (Int) -> Int {
     return { x -> x + value }
 }
 
-inline fun executeWithLogging(name: String, block: () -> Unit) {
+internal inline fun executeWithLogging(name: String, block: () -> Unit) {
     println("Начало: $name")
     val startTime = System.currentTimeMillis()
     block()
@@ -154,7 +154,7 @@ inline fun executeWithLogging(name: String, block: () -> Unit) {
     println("Конец: $name (затрачено ${endTime - startTime} мс)")
 }
 
-fun demoReturnInLambda() {
+internal fun demoReturnInLambda() {
     val numbers = listOf(1, 2, 3, 4, 5)
 
     numbers.forEach {
@@ -170,17 +170,17 @@ fun demoReturnInLambda() {
     println()
 }
 
-fun createCounter(): () -> Int {
+internal fun createCounter(): () -> Int {
     var count = 0
     return {
         count++
     }
 }
 
-fun curryAdd(a: Int): (Int) -> Int {
+internal fun curryAdd(a: Int): (Int) -> Int {
     return { b -> a + b }
 }
 
-fun <T, R, U> compose(f: (R) -> U, g: (T) -> R): (T) -> U {
+internal fun <T, R, U> compose(f: (R) -> U, g: (T) -> R): (T) -> U {
     return { x -> f(g(x)) }
 }
