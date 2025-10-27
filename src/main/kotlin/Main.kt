@@ -9,10 +9,14 @@ import core.Testing.FunctionTesting.functionTesting
 import core.Testing.GenericsTesting.genericsTesting
 import core.Testing.HigherOrderFun.higherOrderFun
 import core.Testing.LambdaTesting.lambdaTesting
+import core.Testing.MultitaskTesting.multitaskTesting
 import core.Testing.NullableTesting.nullableTesting
 import core.Testing.OverloadingTesting.overloadingTesting
 
-fun main() {
+import kotlinx.coroutines.runBlocking
+
+fun main() = runBlocking {
+    println("\nНачало работы программы...\n")
 
     // functionTesting()
     // classesTesting()
@@ -23,5 +27,8 @@ fun main() {
     // overloadingTesting()
     // higherOrderFun()
     // genericsTesting()
-    annotationTesting()
+    // annotationTesting()
+    multitaskTesting()
+
+    println("\nЗавершение работы программы...\n")
 }

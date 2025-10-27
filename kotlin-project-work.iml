@@ -12,5 +12,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
     <orderEntry type="library" name="io.github.serpro69.kotlin.faker" level="project" />
+    <orderEntry type="library" name="kotlinx-coroutines-core-jvm-1.10.2" level="project" />
+    <orderEntry type="library" name="kotlin-logging-jvm-7.0.13" level="project" />
   </component>
 </module>
