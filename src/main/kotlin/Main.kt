@@ -13,6 +13,7 @@ import core.Testing.MultitaskTesting.multitaskTesting
 import core.Testing.NullableTesting.nullableTesting
 import core.Testing.OverloadingTesting.overloadingTesting
 import core.Testing.StructuredCompete.structuredCompete
+import core.Testing.ThreadsTesting.threadsTesting
 
 import kotlinx.coroutines.runBlocking
 
@@ -30,7 +31,8 @@ fun main() = runBlocking {
     // genericsTesting()
     // annotationTesting()
     // multitaskTesting()
-    structuredCompete()
+    // structuredCompete()
+    threadsTesting()
 
     println("\nЗавершение работы программы...\n")
 }
